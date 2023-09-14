@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EarthMuseum</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Css do projeto -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a href="#" class="navbar-brand">
+          <img src="img/globo-terrestre.png" alt="Globo Terrestre" />
+          <span>EarthMuseum</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">Esculturas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">Antiguidades</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <div class="container" id="slider-container">
+      <div class="carousel slide" id="slide" data-bs-ride="carousel">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              class="active"
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide-to="0"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner-1.jpg" alt="Casa 1" class="d-block w-100" /> 
+              <div class="carousel-caption">
+                <h5>Esculturas</h5>
+                <a href="#" class="btn btn-dark">Ver Esculturas</a>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <img src="img/banner-2.jpg" alt="Casa 2" class="d-block w-100" />
+              <div class="carousel-caption">
+                <h5>Antiguidades</h5>
+                <a href="#" class="btn btn-dark">Ver Antiguidades</a>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <img src="img/banner-3.jpg" alt="Casa 3" class="d-block w-100" />
+              <div class="carousel-caption">
+                <h5>Obras Artísticas</h5>
+                <a href="#" class="btn btn-dark">Ver Obras</a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide="prev"
+          >
+            <i class="bi bi-chevron-compact-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide="next"
+          >
+            <i class="bi bi-chevron-compact-right"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- Mini Banners -->
+      <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+        <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="card text-center">
+                <i class="bi bi-calendar primary-color"></i>
+                <div class="card-body">
+                  <h5 class="card-tittle primary-color">Reserve seu ingresso</h5>
+                  <p class="card-text secondary-color">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="#" class="btn btn-dark">Saber mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-center">
+                <i class="bi bi-backpack primary-color"></i>
+                <div class="card-body">
+                  <h5 class="card-tittle primary-color">
+                    Meia para estudantes
+                  </h5>
+                  <p class="card-text.secondary-color">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="#" class="btn btn-dark">Saber mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-center">
+                <i class="bi bi-box primary-color"></i>
+                <div class="card-body">
+                  <h5 class="card-tittle primary-color">Logistica</h5>
+                  <p class="card-text.secondary-color">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="#" class="btn btn-dark">Saber mais</a>
+                </div>
+              </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- DESTAQUES -->
+    <div class="container" id="featured-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Obras de Destaque</h2>
+            <p class="subtitle secundary-color">
+                Conheça nossas obras mais famosas
+            </p>
+        </div>
+        <div class="col-12" id="featured-images">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <img src="img/project-1.jpg" alt="Projeto 1" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome da Obra</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/project-2.jpg" alt="Projeto 2" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome da Obra</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/project-3.jpg" alt="Projeto 3" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome da Obra</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/project-4.jpg" alt="Projeto 4" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome da Obra</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/project-5.jpg" alt="Projeto 5" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome da Obra</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/project-6.jpg" alt="Projeto 6" class="img-fluid">
+                    <div class="banner-content">
+                        <p class="secondary-color">Categoria</p>
+                        <h3>Nome da Obra</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Info -->
+    <div class="container" id="info-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Detalhes importantes</h2>
+            <p class="subtitle secundary-color">
+                Saiba mais sobre o Museum
+            </p>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <img src="img/infobanner.jpg" alt="Informações da Empresa" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title primary-color">A história do nosso Museum</h2>
+                            <p class="subtitle secundary-color">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum recusandae quasi debitis excepturi, delectus obcaecati nisi veniam cumque sequi iusto, quisquam repellendus similique neque dolor, temporibus deleniti doloremque eos sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus ea deleniti dolorum cumque? Cumque laborum molestias assumenda vitae at fugiat voluptas dolor quia nesciunt. Mollitia, possimus? Exercitationem, ratione architecto!
+                            </p>
+                            <p class="subtitle secundary-color">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum recusandae quasi debitis excepturi, delectus obcaecati nisi veniam cumque sequi iusto, quisquam repellendus similique neque dolor, temporibus deleniti doloremque eos sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus ea deleniti dolorum cumque? Cumque laborum molestias assumenda vitae at fugiat voluptas dolor quia nesciunt. Mollitia, possimus? Exercitationem, ratione architecto!
+                            </p>
+
+                            <p class="subtitle secundary-color">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum recusandae quasi debitis excepturi, delectus obcaecati nisi veniam cumque sequi iusto, quisquam repellendus similique neque dolor, temporibus deleniti doloremque eos sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus ea deleniti dolorum cumque? Cumque laborum molestias assumenda vitae at fugiat voluptas dolor quia nesciunt. Mollitia, possimus? Exercitationem, ratione architecto!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col-4">
+                            <h2><img src="img/globo-terrestre-branco.png" alt="Globo Terrestre" class="mr-2"/>EarthMuseum</h2>
+                        </div>
+                        <div class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Details -->
+                <div class="col-12" id="footer-details">
+                    <div class="row">
+                        <div class="col-12 col-md-6" id="news-container">
+                            <h4>Fique por dentro das novidades</h4>
+                            <p class="secondary-color">Inscreva-se para receber mais informações</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Digite o seu email">
+                                </div>
+                                <button class="btn btn-dark" type="submit">Inscrever</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-6" id="contact-container">
+                            <h4>Formas de contato</h4>
+                            <div class="secondary-color">(99)9999-9999</div>
+                            <p class="secondary-color">contato@earthmuseum.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Bottom -->
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">EarthMuseum &copy; 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
